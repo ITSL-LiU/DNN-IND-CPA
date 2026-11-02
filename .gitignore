@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+
+# Generated datasets
+data/
+completion_data/
+
+# Upstream sources fetched/downloaded during setup
+pqc/kyber/
+pqc/bike_data/bike-kem/
+pqc/hqc_data/hqc-v5.0.0/
+
+# Compiled binaries
+pqc/hqc_data/build/
+pqc/kyber_data/kyber_generate_*
+pqc/kyber_data/kyber_indcpa_enc
+pqc/kyber_data/kyber_indcpa_enc_*
+!pqc/kyber_data/*.c
+pqc/bike_data/bike_program
+pqc/bike_data/bike_program_advanced
+pqc/bike_data/bike_encap_program
+pqc/bike_data/bike_program_pke
+
+# Training outputs (written to the working directory by ind_cpa.py)
+*.h5
+*_training_log.csv
+*_history.npy
